@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		182C4DE5A986BADB684E7FA8 /* Pods_InitiativeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331B90F69FD871A43EFB7715 /* Pods_InitiativeUITests.framework */; };
+		AD2886521D228ADD008DE59F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2886511D228ADD008DE59F /* ViewController.swift */; };
+		AD28865B1D2295DD008DE59F /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2886561D2295DD008DE59F /* PlayerCell.swift */; };
+		AD28865C1D2295DD008DE59F /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2886571D2295DD008DE59F /* TableCell.swift */; };
+		AD28865D1D2295DD008DE59F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2886591D2295DD008DE59F /* Player.swift */; };
+		AD28865E1D2295DD008DE59F /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD28865A1D2295DD008DE59F /* SampleData.swift */; };
 		AD9505D11D21050A00B7ECE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9505D01D21050A00B7ECE2 /* AppDelegate.swift */; };
-		AD9505D31D21050A00B7ECE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9505D21D21050A00B7ECE2 /* ViewController.swift */; };
 		AD9505D61D21050A00B7ECE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9505D41D21050A00B7ECE2 /* Main.storyboard */; };
 		AD9505D91D21050A00B7ECE2 /* Initiative.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD9505D71D21050A00B7ECE2 /* Initiative.xcdatamodeld */; };
 		AD9505DB1D21050A00B7ECE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9505DA1D21050A00B7ECE2 /* Assets.xcassets */; };
@@ -46,9 +50,13 @@
 		5CC17C497EB83D078B5AF3F7 /* Pods-Initiative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Initiative.release.xcconfig"; path = "Pods/Target Support Files/Pods-Initiative/Pods-Initiative.release.xcconfig"; sourceTree = "<group>"; };
 		6685729008C88DF887C2E633 /* Pods_InitiativeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InitiativeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FDE6F9FE8502B77F8FCCCF /* Pods-InitiativeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InitiativeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InitiativeUITests/Pods-InitiativeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD2886511D228ADD008DE59F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD2886561D2295DD008DE59F /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		AD2886571D2295DD008DE59F /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		AD2886591D2295DD008DE59F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AD28865A1D2295DD008DE59F /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		AD9505CD1D21050A00B7ECE2 /* Initiative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Initiative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9505D01D21050A00B7ECE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD9505D21D21050A00B7ECE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD9505D51D21050A00B7ECE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD9505D81D21050A00B7ECE2 /* Initiative.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Initiative.xcdatamodel; sourceTree = "<group>"; };
 		AD9505DA1D21050A00B7ECE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +112,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AD2886551D2295DD008DE59F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD2886561D2295DD008DE59F /* PlayerCell.swift */,
+				AD2886571D2295DD008DE59F /* TableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AD2886581D2295DD008DE59F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD2886591D2295DD008DE59F /* Player.swift */,
+				AD28865A1D2295DD008DE59F /* SampleData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		AD9505C41D21050A00B7ECE2 = {
 			isa = PBXGroup;
 			children = (
@@ -129,8 +155,10 @@
 		AD9505CF1D21050A00B7ECE2 /* Initiative */ = {
 			isa = PBXGroup;
 			children = (
+				AD2886551D2295DD008DE59F /* Cell */,
+				AD2886581D2295DD008DE59F /* Model */,
+				AD2886511D228ADD008DE59F /* ViewController.swift */,
 				AD9505D01D21050A00B7ECE2 /* AppDelegate.swift */,
-				AD9505D21D21050A00B7ECE2 /* ViewController.swift */,
 				AD9505D41D21050A00B7ECE2 /* Main.storyboard */,
 				AD9505DA1D21050A00B7ECE2 /* Assets.xcassets */,
 				AD9505DC1D21050A00B7ECE2 /* LaunchScreen.storyboard */,
@@ -430,8 +458,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9505D31D21050A00B7ECE2 /* ViewController.swift in Sources */,
+				AD28865C1D2295DD008DE59F /* TableCell.swift in Sources */,
+				AD28865E1D2295DD008DE59F /* SampleData.swift in Sources */,
+				AD28865B1D2295DD008DE59F /* PlayerCell.swift in Sources */,
 				AD9505D91D21050A00B7ECE2 /* Initiative.xcdatamodeld in Sources */,
+				AD2886521D228ADD008DE59F /* ViewController.swift in Sources */,
+				AD28865D1D2295DD008DE59F /* Player.swift in Sources */,
 				AD9505D11D21050A00B7ECE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
