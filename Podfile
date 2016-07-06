@@ -7,6 +7,7 @@ target 'Initiative' do
 pod 'Alamofire', '~> 3.4'
 pod 'SwiftyJSON', '~> 2.3'
 pod 'Firebase', '~> 3.2'
+pod 'Google/SignIn'
 end
 
 target 'InitiativeTests' do
